@@ -1,13 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        deploy the fucking react app
-      </header>
+      <h1>saurabh bhaii</h1>
     </div>
   );
 }
