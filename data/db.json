@@ -1,74 +1,44 @@
 {
   "blogs": [
     {
-      "name": " saurabh daswant ",
-      "topic": " Are you getting less marks in online exam?",
-      "date": " nov 6, 2021",
-      "domain": "blog.pathatshir.com",
+      "name": " sahil kadolkar ",
+      "topic": "How to center a div ",
+      "date": " jun 24, 2021",
+      "domain": "kadolkar.dev-crew.com",
       "context": "how to copy and paste the worlds best tip you will get hreereadable content of a page when",
-      "like": 200,
+      "like": 69,
       "feed": "relevant",
       "id": 1
     },
     {
-      "name": " sahil kadolkar ",
-      "topic": " Are you getting less marks in online exam?",
-      "date": " nov 6, 2021",
-      "domain": "blog.pathatshir.com",
-      "context": "how to copy and paste the worlds best tip you will get hreereadable content of a page when",
-      "like": 200,
-      "feed": "relevant",
+      "name": " saurabh daswant ",
+      "topic": "Learn how to conquer responsive layout",
+      "date": " jun 27, 2021",
+      "domain": "saurabh.der-crew.com",
+      "context": "You feel like there are too many moving parts when it comes to making a layout responsive.",
+      "like": "4k",
+      "feed": "featured",
       "id": 2
     },
     {
       "name": " sammer gaikwad ",
-      "topic": " Are you getting less marks in online exam?",
-      "date": " nov 6, 2021",
-      "domain": "blog.pathatshir.com",
-      "context": "how to copy and paste the worlds best tip you will get hreereadable content of a page when",
-      "like": 200,
+      "topic": "Why india has banned the immensely popular pubg mobile game?",
+      "date": " nov 28, 2021",
+      "domain": "kalu.dev.crew.com",
+      "context": "according to a press release from the Indian Ministry of Electronics & Information Technology. This is the latest round of Chinese app bans from the Indian government after TikTok and WeChat were banned in June.",
+      "like": 2,
       "feed": "relevant",
       "id": 3
     },
     {
-      "name": " sanjay gaikwad ",
+      "name": " dhapal padhattshir ",
       "topic": " Are you getting less marks in online exam?",
-      "date": " nov 6, 2021",
-      "domain": "blog.pathatshir.com",
+      "date": " sep 6, 2021",
+      "domain": "pathatshir.dev.crew.com",
       "context": "how to copy and paste the worlds best tip you will get hreereadable content of a page when",
       "like": 200,
-      "feed": "relevant",
+      "feed": "recent",
       "id": 4
-    },
-    {
-      "name": " yash bisale ",
-      "topic": " Are you getting less marks in online exam?",
-      "date": " nov 6, 2021",
-      "domain": "blog.pathatshir.com",
-      "context": "how to copy and paste the worlds best tip you will get hreereadable content of a page when",
-      "like": 200,
-      "feed": "relevant",
-      "id": 5
-    },
-    {
-      "name": " abhishek joshilkar ",
-      "topic": " Are you getting less marks in online exam?",
-      "date": " nov 6, 2021",
-      "domain": "blog.pathatshir.com",
-      "context": "how to copy and paste the worlds best tip you will get hreereadable content of a page when",
-      "like": 200,
-      "feed": "relevant",
-      "id": 6
-    },
-    {
-      "name": " mahesh kadam ",
-      "topic": " Are you getting less marks in online exam?",
-      "date": " nov 6, 2021",
-      "domain": "blog.pathatshir.com",
-      "context": "how to copy and paste the worlds best tip you will get hreereadable content of a page when",
-      "like": 200,
-      "feed": "relevant",
-      "id": 7
     }
   ]
 }
