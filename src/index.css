@@ -46,10 +46,11 @@ p {
   font-size: 18px;
   line-height: 24.75px;
   letter-spacing: -0.45px;
+  margin-bottom: 2rem;
 }
 
 .topic {
-  font-size: 24px;
+  font-size: 1.875rem;
   font-weight: 700;
   line-height: 33px;
   letter-spacing: -0.6px;
@@ -59,10 +60,22 @@ p {
 .name {
   line-height: 22px;
   color: #424242;
+  font-weight: 600;
+}
+.date {
+  color: #616161;
+  line-height: 20px;
+  font-size: 14px;
 }
 
 .domain {
   color: #757575;
+  line-height: 24px;
+  font-size: 1rem;
+}
+
+.like {
+  color: #616161;
   line-height: 24px;
 }
 
@@ -73,10 +86,14 @@ button,
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  color: #2962ff;
+  color: #374151;
   font-weight: 600;
   font-size: 1.1rem;
   background-color: transparent;
+}
+
+.buttons .active {
+  color: #2962ff;
 }
 
 button:hover {

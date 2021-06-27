@@ -5,17 +5,20 @@ const Blog = (props) => {
   const Topic = (props) => <p className="topic">{props.children}</p>;
   const Name = (props) => <p className="name">{props.children}</p>;
   const Domain = (props) => <p className="domain">{props.children}</p>;
-  //   const Date = (props) => <p className="date">{props.children}</p>;
+  const Like = (props) => <p className="like">{props.children}</p>;
+  const Date = (props) => <p className="date">{props.children}</p>;
 
   return (
     <div className="container">
       <Name>
-        {name} {date}
+        {name}
+        <Date>{date}</Date>
       </Name>
+
       <Topic>{topic}</Topic>
       <Domain>{domain}</Domain>
       <Context>{context}</Context>
-      {like}
+      <Like>{like}</Like>
     </div>
   );
 };
