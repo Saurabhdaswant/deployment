@@ -1,41 +1,63 @@
 import NavBar from "./NavBar";
 import Blog from "./Blog";
-import { useEffect, useState } from "react";
+// import Relevant from "./Relevant";
+import useFetch from "./useFetch";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Recent from "./Recent";
+import Featured from "./Featured";
 
 function App() {
-  const [post, setPost] = useState(null);
-  const [error, setError] = useState(null);
-  const [pending, setPending] = useState(true);
-
-  useEffect(() => {
-    fetch("http://localhost:7000/blogs")
-      .then((res) => {
-        if (!res.ok) {
-          throw Error("you database dosent have data madar fakir");
-        }
-        return res.json();
-      })
-      .then((data) => {
-        setPost(data);
-        setPending(false);
-        setError(null);
-      })
-      .catch((err) => {
-        setError(err.message);
-        setPending(false);
-      });
-  }, []);
+  const {
+    RealData: post,
+    pending,
+    error,
+  } = useFetch("http://localhost:5000/blogs");
 
   return (
-    <div className="App">
-      <NavBar />
-      {pending && <div>data is coming soon</div>}
-      {error && <div>{error}</div>}
-      {post &&
-        post.map((data) => {
-          return <div>{<Blog key={data.id} {...data} />}</div>;
-        })}
-    </div>
+    <Router>
+      <div className="App">
+        <NavBar />
+        {pending && <div>data is coming soon</div>}
+        {error && <div>{error}</div>}
+
+        <Switch>
+          <Route exact path="/">
+            {post &&
+              post.map((data) => {
+                return <div>{<Blog key={data.id} {...data} />}</div>;
+              })}
+          </Route>
+          {/* <Route exact path="/Relevant">
+            {post && (
+              <Relevant
+                sendData={post.filter(
+                  (relevantOnly) => relevantOnly.feed === "relevant"
+                )}
+              />
+            )}
+          </Route> */}
+          <Route exact path="/recent">
+            {post && (
+              <Recent
+                sendData={post.filter(
+                  (RecentOnly) => RecentOnly.feed === "recent"
+                )}
+              />
+            )}
+          </Route>
+          <Route exact path="/Featured">
+            {post && (
+              <Featured
+                sendData={post.filter(
+                  (FeaturedOnly) => FeaturedOnly.feed === "featured"
+                )}
+              />
+            )}
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

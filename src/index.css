@@ -79,7 +79,7 @@ p {
   line-height: 24px;
 }
 
-button,
+.button,
 .myfeed {
   padding: 4px 12px;
   margin-right: 8px;
@@ -90,12 +90,19 @@ button,
   font-weight: 600;
   font-size: 1.1rem;
   background-color: transparent;
+  text-decoration: none;
 }
 
-.buttons .active {
+.button:hover,
+.button:focus {
   color: #2962ff;
   background-color: #f5f5f5;
 }
+
+/* .buttons .active {
+  color: #2962ff;
+  background-color: #f5f5f5;
+} */
 
 button:hover {
   background-color: #f5f5f5;
