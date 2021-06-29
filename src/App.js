@@ -12,7 +12,7 @@ function App() {
     RealData: post,
     pending,
     error,
-  } = useFetch("http://localhost:5000/blogs");
+  } = useFetch("http://localhost:4000/blogs");
 
   return (
     <Router>
